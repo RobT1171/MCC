@@ -1,0 +1,21 @@
+name = "mcc-api"
+main = "src/index.js"
+compatibility_date = "2024-12-01"
+
+# D1 Database binding
+[[d1_databases]]
+binding = "DB"
+database_name = "mcc-db"
+database_id = "aea82255-0976-46fb-8fe2-3941a6720992"
+# KV Namespace for sessions/cache (we'll add this later)
+# [[kv_namespaces]]
+# binding = "SESSIONS"
+# id = "YOUR_KV_ID_GOES_HERE"
+
+# Environment variables (set via wrangler secret)
+# OPENAI_API_KEY - set with: wrangler secret put OPENAI_API_KEY
+# GHL_API_KEY - set with: wrangler secret put GHL_API_KEY
+
+[vars]
+ENVIRONMENT = "production"
+CORS_ORIGIN = "https://app.gohighlevel.com"
